@@ -1,0 +1,33 @@
+{
+  "name": "riderbackend",
+  "version": "1.0.0",
+  "description": "Rider app backend",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "nodemon server.ts",
+    "build": "npx tsc",
+    "start": "node dist/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nirjus Karmakar",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/express": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^22.9.3",
+    "prisma": "^5.22.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.22.0",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0"
+  }
+}
