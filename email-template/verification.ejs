@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rider Email</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+        line-height: 1.6;
+      }
+      .container {
+        width: 90%;
+        max-width: 600px;
+        margin: 20px auto;
+        background: #ffffff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      .header {
+        background-color: #007bff;
+        color: #ffffff;
+        text-align: center;
+        padding: 20px 10px;
+      }
+      .header h1 {
+        margin: 0;
+        font-size: 28px;
+      }
+      .header p {
+        margin: 5px 0 0;
+        font-size: 14px;
+      }
+      .body {
+        padding: 20px;
+      }
+      .body h1 {
+        font-size: 24px;
+        color: #007bff;
+        margin-bottom: 10px;
+      }
+      .body h2 {
+        font-size: 20px;
+        color: #555;
+        margin-bottom: 10px;
+      }
+      .body p {
+        font-size: 16px;
+        margin: 10px 0;
+        color: #666;
+      }
+      .footer {
+        background-color: #007bff;
+        color: #ffffff;
+        text-align: center;
+        padding: 15px 10px;
+        font-size: 14px;
+      }
+      .footer a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+      .button {
+        display: inline-block;
+        background-color: #007bff;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-top: 20px;
+        font-size: 16px;
+      }
+      .button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <h1>Rider</h1>
+        <p>GO everywhere with Rider</p>
+      </div>
+
+      <!-- Body -->
+      <div class="body">
+        <h1>Welcome, <%= name %>!</h1>
+        <h2>Thank you for registering!</h2>
+        <p>
+          We are excited to have you onboard. Please use the OTP below to
+          complete your registration and start your journey with Rider.
+        </p>
+        <h2>Your OTP:</h2>
+        <p style="text-align: center">
+          <strong style="font-size: 20px"><%= otp %></strong>
+        </p>
+        <p>
+          If you have any questions, feel free to contact us anytime. We're here
+          to help you 24/7!
+        </p>
+        <br />
+        <br />
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <p>
+          &copy; <%= new Date().getFullYear() %> Rider. All rights reserved.
+        </p>
+        <p>
+          <a href="https://rider.com/privacy">Privacy Policy</a> |
+          <a href="https://rider.com/terms">Terms of Service</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
