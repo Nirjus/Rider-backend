@@ -189,3 +189,5 @@ export const getUserProfile = async (
     next(error);
   }
 };
+
+export const logout = async () => {};
